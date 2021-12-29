@@ -8,7 +8,7 @@ Segunda sprint do programa de bolsas Compass.uol para formação em chatbot Rasa
 
 [Weather Tracker no Heroku](https://sprint-api-compass.herokuapp.com/)
 
-[Weather Tracker no Okteto](https://weathertracker-leo0liveira.cloud.okteto.net/)
+[Weather Tracker no Okteto](https://web-leo0liveira.cloud.okteto.net/)
 
 ## Execução Local
 
