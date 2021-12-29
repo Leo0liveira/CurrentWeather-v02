@@ -1,0 +1,37 @@
+{
+  "name": "sprint-2-pb-ufms",
+  "version": "1.0.0",
+  "description": "Segunda sprint do programa de bolsas Compass.uol para formação em chatbot Rasa.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "install": "npm install body-parser ejs express mongoose nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Compass-pb-rasa-2021-ufms/sprint-2-pb-ufms.git"
+  },
+  "author": "Leonardo Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Compass-pb-rasa-2021-ufms/sprint-2-pb-ufms/issues"
+  },
+  "homepage": "https://github.com/Compass-pb-rasa-2021-ufms/sprint-2-pb-ufms#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  }
+}

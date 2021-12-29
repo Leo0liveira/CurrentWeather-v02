@@ -1,0 +1,30 @@
+version: "3"
+services:
+  dbmongo:
+    image: mongo
+    container_name: weathertracker-db
+    networks:
+      - dev
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: test
+  web:
+    container_name: weathertracker
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: weathertracker-app
+    ports: 
+      - "3000:8080"
+    networks: 
+      - dev
+    depends_on:
+      - dbmongo
+
+networks: 
+    dev:
+        driver: bridge
